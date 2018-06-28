@@ -1,0 +1,79 @@
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+body {
+    text-align: center;
+    background: #272626;
+    color: #f5deb3;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+h1 {
+    font-weight: 100;
+    font-size: 1.5em;
+    text-align: left;
+    text-indent: .3em;
+    margin-bottom: 3em;
+}
+span.logo::after {
+    content: "A";
+}
+span.logo::before {
+    content: "W";
+}
+span.logo::after,
+span.logo::before {
+    padding: .1em .5em;
+    border: 1px solid #f5deb3;
+    transform: translateX(0px) translateY(-20px);
+    animation: rotate 10s ease infinite;
+}
+h2 {
+    margin-top: 3em;
+    text-align: center;
+    font-weight: 300;
+    font-size: 2em;
+}
+div.temperature {
+    font-weight: 100;
+    font-size: 2em;
+}
+button#view-full-report {
+    margin-top: 3em;
+    background: unset;
+    border: 1px solid #f5deb3;
+    padding: .7em;
+    color: #f5deb3;
+    border-radius: .3em;
+    cursor: pointer;
+}
+div#full-report {
+    /* display: none; */
+    position: fixed;
+    top: .7em;
+    background: black;
+    width: 100%;
+    height: 100%;
+}
+div#full-report table {
+    width: 80%;
+    border: 1px solid wheat;
+    border-radius: .2em;
+    margin: auto;
+    text-align: left;
+}
+div#full-report table td, div#full-report table th {
+    border-bottom: 1px solid wheat;
+    border-right: 1px solid wheat;
+    border-left: 1px solid wheat;
+    padding: .7em;
+}
+div#full-report table th {
+    font-weight: 900;
+}
