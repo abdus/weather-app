@@ -1,0 +1,125 @@
+@keyframes rotate {
+    0% {
+        background: #420909;
+    }
+    25% {
+        background: #243003;
+    }
+    50% {
+        background: #055328;
+    }
+    75% {
+        background: #05056d;
+    }
+    100% {
+        background: #45098a;
+    }
+}
+
+body {
+    text-align: center;
+    color: #f5deb3;
+    font-weight: 100;
+    font-family: sans-serif;
+    background: #272626;
+}
+div.container {
+    min-height: 100vh;
+    background: #2726269c;
+}
+h1 {
+    font-weight: 100;
+    font-size: 1.5em;
+    text-align: left;
+    text-indent: .3em;
+    padding-top: 1em;
+    margin-bottom: 3em;
+    margin-top: 0em;
+}
+span.logo::after {
+    content: "A";
+}
+span.logo::before {
+    content: "W";
+}
+span.logo::after,
+span.logo::before {
+    padding: .1em .5em;
+    border: 1px solid #f5deb3;
+    transform: translateX(0px) translateY(-20px);
+    animation: rotate 3s ease-in-out infinite;
+}
+div.temperature {
+    margin-top: 20vh;
+    font-weight: 100;
+    font-size: 2em;
+}
+h2 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 2em;
+    margin: 0;
+}
+button, button#view-full-report {
+    margin-top: 3em;
+    background: unset;
+    border: 1px solid gray;
+    padding: .7em;
+    border-radius: .3em;
+    cursor: pointer;
+    color: gray;
+}
+button#exit {
+    color: #f5deb3;
+    border: 1px solid #f5deb3;
+    margin: 2vh 0;
+}
+div#full-report {
+    display: none;
+    position: fixed;
+    top: 0em;
+    background: rgba(0, 0, 0, 0.651);
+    width: 100%;
+    min-height: 100vh;
+    padding: 0vh 0;
+}
+div#full-report table {
+    width: 80%;
+    border: 1px solid wheat;
+    border-radius: .2em;
+    margin: auto;
+    text-align: left;
+    background: black;
+}
+div#full-report table td, div#full-report table th {
+    border-bottom: 1px solid wheat;
+    border-right: 1px solid wheat;
+    border-left: 1px solid wheat;
+    padding: .7em;
+}
+div#full-report table th {
+    font-weight: 900;
+}
+img.weather {
+    height: 20px;
+    width: 20px;
+    padding: 0 10px;
+}
+footer {
+    padding: 3vh 2vh;
+    font-size: 1em;
+    margin-top: 30vh;
+}
+footer a {
+    color: #ecbb61;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 600px) {
+    footer {
+        text-align: justify;
+        text-justify: inter-character;
+    }
+}

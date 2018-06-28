@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Weather Forecast App to give you the updated weather report daily.">
+    <meta property="og:title" content="Weather Forecast App" />
+    <meta property="og:url" content="http://thisisabdus.github.io/weather-app/" />
+    <meta property="og:description" content="Weather Forecast App to give you the updated weather report daily.">
+    <meta property="og:image" content="./img/banner.png">
+    <meta property="og:type" content="website" />
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <h1><span class="logo"></span></h1>
+        <div class="temperature"> 
+            <span class="weather-overview">0.00</span> ° Celsius <br>
+            <img class="weather-overview" src="" alt="weather_icon">
+        </div>
+        <h2 class="weather-overview">You Location</h2>
+        <button disabled id="view-full-report">View Full Report</button>
+        
+        <div id="full-report">
+            <button id="exit">X Close</button>
+            <table>
+                <tr>
+                    <th>DATE</th>
+                    <th><span class="weather"></span></th>
+                </tr>
+                <tr>
+                    <td>WEATHER</td>
+                    <td><span class="weather"></span><img src="" alt="" class="weather"></td>
+                </tr>
+                <tr>
+                    <td>MIN TEMP</td>
+                    <td><span class="weather"></span>° C</td>
+                </tr>
+                <tr>
+                    <td>MAX TEMP</td>
+                    <td><span class="weather"></span>° C</td>
+                </tr>
+                <tr>
+                    <td>PRESSURE</td>
+                    <td><span class="weather"></span> Pa</td>
+                </tr>
+                <tr>
+                    <td>WIND</td>
+                    <td><span class="weather"></span> KMpH</td>
+                </tr>
+                <tr>
+                    <td>HUMIDITY</td>
+                    <td><span class="weather"></span>%</td>
+                </tr>
+            </table>
+        </div>
+        <footer>
+            Designed & developed by <a  href="https://abdusdev.me">Abdus</a> using the <a    href="https://freecodecamp.org">Free Code Camp</a>     weather API and <a  href="https://developer.mozilla.org/en-US/docs/Web/API   /Geolocation_API">HTML5 GeoLocation</a> API.
+        </footer>
+    </div>
+
+    <!-- PLATFORM.js -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/platform/1.3.5/platform.min.js"></script> -->
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
