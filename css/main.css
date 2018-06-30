@@ -6,13 +6,13 @@
         background: #243003;
     }
     50% {
-        background: #132b3b;
+        background: #055328;
     }
     75% {
         background: #05056d;
     }
     100% {
-        background: rgb(69, 9, 138);
+        background: #45098a;
     }
 }
 
@@ -45,7 +45,7 @@ span.logo::before {
     padding: .1em .5em;
     border: 1px solid #f5deb3;
     transform: translateX(0px) translateY(-20px);
-    animation: rotate 2s ease infinite;
+    animation: rotate 3s ease-in-out infinite;
 }
 div.temperature {
     margin-top: 20vh;
