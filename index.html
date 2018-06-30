@@ -11,14 +11,15 @@
 <body>
     <div class="container">
         <h1><span class="logo"></span></h1>
-        <h2>Nagaon, India</h2>
         <div class="temperature"> 
-            <img src="https://cdn.glitch.com/6e8889e5-7a72-48f0-a061-863548450de5%2F10n.png?1499366021399" alt=""> <br>
-            22.59° Celsius
+            <span class="weather-overview">0.00</span> ° Celsius <br>
+            <img class="weather-overview" src="" alt="weather_icon">
         </div>
-        <button id="view-full-report">View Full Report</button>
+        <h2 class="weather-overview">You Location</h2>
+        <button disabled id="view-full-report">View Full Report</button>
         
         <div id="full-report">
+            <button id="exit">X Close</button>
             <table>
                 <tr>
                     <th>DATE</th>
@@ -26,7 +27,7 @@
                 </tr>
                 <tr>
                     <td>WEATHER</td>
-                    <td><span class="weather"></span></td>
+                    <td><span class="weather"></span><img src="" alt="" class="weather"></td>
                 </tr>
                 <tr>
                     <td>MIN TEMP</td>
@@ -38,23 +39,22 @@
                 </tr>
                 <tr>
                     <td>PRESSURE</td>
-                    <td><span class="weather"></span> Pascal</td>
+                    <td><span class="weather"></span> Pa</td>
                 </tr>
                 <tr>
-                    <td>WIND SPEED</td>
+                    <td>WIND</td>
                     <td><span class="weather"></span> KMpH</td>
                 </tr>
                 <tr>
-                    <td>SUNRISE</td>
-                    <td><span class="weather"></span></td>
-                </tr>
-                <tr>
-                    <td>SUNSET</td>
-                    <td><span class="weather"></span></td>
+                    <td>HUMIDITY</td>
+                    <td><span class="weather"></span>%</td>
                 </tr>
             </table>
         </div>
     </div>
+    <footer>
+        Designed & developed by <a href="https://abdusdev.me">Abdus</a> using the <a href="https://freecodecamp.org">Free Code Camp</a> weather API and <a href="">HTML5 GeoLocation</a> API.
+    </footer>
 
     <script src="./js/main.js"></script>
 </body>
