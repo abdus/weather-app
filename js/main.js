@@ -1,6 +1,7 @@
 let weatherApiEndpoint = 'https://fcc-weather-api.glitch.me/api/current?';
 let weatherOverview =[], weatherDetails = [];
 
+console.log('Working Javascript');
 //DOM
 let weatherHtmlField = document.querySelectorAll('.weather');
 let btn_viewFullReport = document.querySelector('#view-full-report');
