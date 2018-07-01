@@ -56,5 +56,3 @@ btn_viewFullReport.addEventListener('click', () => {
 btn_exit.addEventListener('click', () => {
     viewFullReport.style.display = 'none';
 });
-
-// alert(platform.name + ' ' + platform.version);
