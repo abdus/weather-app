@@ -10,6 +10,7 @@ let btn_exit = document.querySelector('#exit');
 
 navigator.geolocation.getCurrentPosition(data => {
 
+    console.log('Working');
     // setting endPoint with Parameter
     weatherApiEndpoint = weatherApiEndpoint + 'lat=' + data.coords.latitude + '&lon=' + data.coords.longitude; 
 
