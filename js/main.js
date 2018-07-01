@@ -17,9 +17,9 @@ navigator.geolocation.getCurrentPosition(data => {
     fetch(weatherApiEndpoint)
     .then( e=> e.json())
     .then(e => {
-
+        
         // Setting array of weatherDetails 
-        weatherDetails.push(new Date().getDay() + '/' + new Date().getMonth() + '/' + new Date().getFullYear());
+        weatherDetails.push(new Date().getDate() + '/' + new Date().getMonth() + '/' + new Date().getFullYear());
         weatherDetails.push(e.weather[0].main);
         weatherDetails.push(e.weather[0].icon);
         weatherDetails.push(e.main.temp_min);
@@ -54,3 +54,5 @@ btn_viewFullReport.addEventListener('click', () => {
 btn_exit.addEventListener('click', () => {
     viewFullReport.style.display = 'none';
 });
+
+alert(platform.name, platform.version);
