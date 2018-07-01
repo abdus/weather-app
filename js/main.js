@@ -44,6 +44,8 @@ navigator.geolocation.getCurrentPosition(data => {
         btn_viewFullReport.disabled = false;
         btn_viewFullReport.style.color = '#f5deb3';
         btn_viewFullReport.style.borderColor = '#f5deb3';
+        document.querySelector('body').style.background = 'url(./img/weather_types/' + e.weather[0].main + '.jpg)';
+        document.querySelector('body').style.backgroundSize = 'cover';
     });
 });
 
@@ -55,4 +57,4 @@ btn_exit.addEventListener('click', () => {
     viewFullReport.style.display = 'none';
 });
 
-alert(platform.name + ' ' + platform.version);
+// alert(platform.name + ' ' + platform.version);

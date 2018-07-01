@@ -18,21 +18,23 @@
 
 body {
     text-align: center;
-    background: #272626;
     color: #f5deb3;
     font-weight: 100;
     font-family: sans-serif;
-    overflow: hidden;
+    background: #272626;
 }
 div.container {
-    min-height: 80vh;
+    min-height: 100vh;
+    background: #2726269c;
 }
 h1 {
     font-weight: 100;
     font-size: 1.5em;
     text-align: left;
     text-indent: .3em;
+    padding-top: 1em;
     margin-bottom: 3em;
+    margin-top: 0em;
 }
 span.logo::after {
     content: "A";
@@ -74,12 +76,12 @@ button#exit {
 }
 div#full-report {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0em;
-    background: black;
+    background: rgba(0, 0, 0, 0.651);
     width: 100%;
-    min-height: 90vh;
-    padding: 10vh 0;
+    min-height: 100vh;
+    padding: 0vh 0;
 }
 div#full-report table {
     width: 80%;
@@ -87,6 +89,7 @@ div#full-report table {
     border-radius: .2em;
     margin: auto;
     text-align: left;
+    background: black;
 }
 div#full-report table td, div#full-report table th {
     border-bottom: 1px solid wheat;
@@ -105,6 +108,7 @@ img.weather {
 footer {
     padding: 3vh 2vh;
     font-size: 1em;
+    margin-top: 30vh;
 }
 footer a {
     color: #ecbb61;
