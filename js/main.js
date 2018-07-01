@@ -8,8 +8,6 @@ let viewFullReport = document.querySelector('#full-report');
 let weatherOverviewHTML = document.querySelectorAll('.weather-overview');
 let btn_exit = document.querySelector('#exit');
 
-if (navigator.geolocation) {
-
 navigator.geolocation.getCurrentPosition(data => {
 
     // setting endPoint with Parameter
@@ -48,7 +46,6 @@ navigator.geolocation.getCurrentPosition(data => {
         btn_viewFullReport.style.borderColor = '#f5deb3';
     });
 });
-} else alert('GeoLocation Doesn\'t work on your mobile');
 
 btn_viewFullReport.addEventListener('click', () => {
     viewFullReport.style.display = 'block';
