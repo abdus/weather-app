@@ -55,4 +55,4 @@ btn_exit.addEventListener('click', () => {
     viewFullReport.style.display = 'none';
 });
 
-alert(platform.name, platform.version);
+alert(platform.name + ' ' + platform.version);
